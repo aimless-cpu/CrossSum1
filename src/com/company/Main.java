@@ -10,8 +10,12 @@ public class Main {
 
             int result = 0;
 
-            for (int j=0; j< numbers.length;j++) { //wth is enhanced for?
+            /*for (int j=0; j< numbers.length;j++) { //wth is enhanced for?
                 result = result + Character.getNumericValue(numbers[j]);
+            }
+            */
+            for (char number : numbers) {
+                result = result + Character.getNumericValue(number);
             }
 
             if (result==15) {
